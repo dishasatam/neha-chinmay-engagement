@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="silkGreenBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#0E4C33"/>
+      <stop offset="60%" stop-color="#083020"/>
+      <stop offset="100%" stop-color="#03160E"/>
+    </radialGradient>
+    <linearGradient id="zariGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6"/>
+      <stop offset="35%" stop-color="#E5C778"/>
+      <stop offset="70%" stop-color="#B58E4C"/>
+      <stop offset="100%" stop-color="#73531F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#silkGreenBg)"/>
+
+  <!-- Saree Border Zari Bands (Top and Bottom) -->
+  <rect x="0" y="30" width="600" height="24" fill="url(#zariGold)"/>
+  <rect x="0" y="396" width="600" height="24" fill="url(#zariGold)"/>
+  <rect x="0" y="42" width="600" height="4" fill="#641D2B"/>
+  <rect x="0" y="404" width="600" height="4" fill="#641D2B"/>
+
+  <!-- Subtle Diamond Weave Texture across Saree -->
+  <g opacity="0.1" stroke="url(#zariGold)" stroke-width="1">
+    <path d="M 0,0 L 600,450 M 100,0 L 600,375 M 200,0 L 600,300 M 300,0 L 600,225 M 400,0 L 600,150 M 500,0 L 600,75"/>
+    <path d="M 0,450 L 600,0 M 0,375 L 500,0 M 0,300 L 400,0 M 0,225 L 300,0 M 0,150 L 200,0 M 0,75 L 100,0"/>
+  </g>
+
+  <!-- Central Regal Paithani Mor (Peacock) Motif in Zari -->
+  <g transform="translate(300, 225)">
+    <!-- Ornate Medallion Frame -->
+    <circle cx="0" cy="0" r="125" fill="#083020" stroke="url(#zariGold)" stroke-width="5"/>
+    <circle cx="0" cy="0" r="114" fill="none" stroke="url(#zariGold)" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Peacock Tail Feather Fan (Zari Arcs) -->
+    <path d="M -80,-50 C -40,-120 40,-120 80,-50 C 70,-10 30,30 0,45 C -30,30 -70,-10 -80,-50 Z" 
+          fill="#0C3D29" stroke="url(#zariGold)" stroke-width="2.5"/>
+
+    <!-- Tail Feather "Eyes" -->
+    <ellipse cx="0" cy="-75" rx="10" ry="16" fill="url(#zariGold)"/>
+    <circle cx="0" cy="-75" r="5" fill="#0E4C33"/>
+    <ellipse cx="-40" cy="-55" rx="8" ry="14" fill="url(#zariGold)" transform="rotate(-30 -40 -55)"/>
+    <circle cx="-40" cy="-55" r="4" fill="#0E4C33"/>
+    <ellipse cx="40" cy="-55" rx="8" ry="14" fill="url(#zariGold)" transform="rotate(30 40 -55)"/>
+    <circle cx="40" cy="-55" r="4" fill="#0E4C33"/>
+
+    <!-- Peacock Body Silhouette -->
+    <path d="M 0,30 C -15,10 -20,-20 0,-35 C 10,-20 12,10 0,30 Z" fill="url(#zariGold)"/>
+    <!-- Graceful Arching Neck & Crown -->
+    <path d="M 0,-30 C -8,-45 0,-60 12,-65" fill="none" stroke="url(#zariGold)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="14" cy="-66" r="5" fill="url(#zariGold)"/>
+    <!-- Kalgi / Crest on Head -->
+    <line x1="14" y1="-70" x2="16" y2="-78" stroke="url(#zariGold)" stroke-width="2"/>
+    <circle cx="16" cy="-79" r="2" fill="url(#zariGold)"/>
+  </g>
+</svg>
