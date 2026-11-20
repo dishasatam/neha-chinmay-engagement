@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ringBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#4A101D"/>
+      <stop offset="60%" stop-color="#2D060F"/>
+      <stop offset="100%" stop-color="#180206"/>
+    </radialGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6"/>
+      <stop offset="30%" stop-color="#E5C778"/>
+      <stop offset="70%" stop-color="#B58E4C"/>
+      <stop offset="100%" stop-color="#7A561D"/>
+    </linearGradient>
+    <linearGradient id="diamondSpark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#E0F7FA"/>
+      <stop offset="100%" stop-color="#B2EBF2"/>
+    </linearGradient>
+    <filter id="ringGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#ringBg)"/>
+
+  <!-- Velvet Ring Cushion Base -->
+  <ellipse cx="300" cy="290" rx="200" ry="85" fill="#380913" stroke="url(#goldRing)" stroke-width="2"/>
+  <ellipse cx="300" cy="285" rx="180" ry="72" fill="#520E1D"/>
+
+  <!-- Fresh White Jasmine Flowers on Cushion Rim -->
+  <g opacity="0.85">
+    <circle cx="150" cy="280" r="8" fill="#FFFFF0"/>
+    <circle cx="170" cy="295" r="7" fill="#FFFFF0"/>
+    <circle cx="430" cy="290" r="8" fill="#FFFFF0"/>
+    <circle cx="450" cy="275" r="7" fill="#FFFFF0"/>
+    <circle cx="210" cy="335" r="7.5" fill="#FFFFF0"/>
+    <circle cx="390" cy="335" r="7.5" fill="#FFFFF0"/>
+  </g>
+
+  <!-- Left Ring: Solitaire Diamond Engagement Ring (Tilted) -->
+  <g transform="translate(250, 220) rotate(-15)">
+    <!-- Ring Band -->
+    <ellipse cx="0" cy="0" rx="55" ry="32" fill="none" stroke="url(#goldRing)" stroke-width="14"/>
+    <ellipse cx="0" cy="0" rx="55" ry="32" fill="none" stroke="#FFEAA7" stroke-width="3"/>
+    <!-- Diamond Setting Crown -->
+    <polygon points="-16,-34 16,-34 10,-24 -10,-24" fill="url(#goldRing)"/>
+    <!-- Brilliant Cut Solitaire Diamond -->
+    <polygon points="0,-52 14,-34 0,-24 -14,-34" fill="url(#diamondSpark)" filter="url(#ringGlow)"/>
+    <line x1="-14" y1="-34" x2="14" y2="-34" stroke="#B2EBF2" stroke-width="1.5"/>
+    <line x1="0" y1="-52" x2="0" y2="-24" stroke="#FFFFFF" stroke-width="1.5"/>
+    <!-- Diamond Shimmer Star -->
+    <polygon points="0,-58 2,-52 8,-50 2,-48 0,-42 -2,-48 -8,-50 -2,-52" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Right Ring: Classic Polished Gold Band (Interlocking / Nested) -->
+  <g transform="translate(350, 230) rotate(18)">
+    <!-- Ring Band -->
+    <ellipse cx="0" cy="0" rx="56" ry="34" fill="none" stroke="url(#goldRing)" stroke-width="16"/>
+    <ellipse cx="0" cy="0" rx="56" ry="34" fill="none" stroke="#FFF2C6" stroke-width="3"/>
+    <!-- Inner Shadow -->
+    <ellipse cx="0" cy="0" rx="46" ry="24" fill="none" stroke="#7A561D" stroke-width="1.5"/>
+  </g>
+
+  <!-- Soft Ambient Floating Gold Dust -->
+  <circle cx="230" cy="140" r="2" fill="#FFEAA7" opacity="0.7"/>
+  <circle cx="370" cy="130" r="2.5" fill="#FFEAA7" opacity="0.8"/>
+  <circle cx="300" cy="110" r="1.5" fill="#FFEAA7" opacity="0.6"/>
+</svg>

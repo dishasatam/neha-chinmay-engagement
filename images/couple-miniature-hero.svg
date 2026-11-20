@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="100%" height="100%">
+  <defs>
+    <!-- Background Vignette -->
+    <radialGradient id="stageGlow" cx="50%" cy="60%" r="65%">
+      <stop offset="0%" stop-color="#4A101D" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#24060C" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#140206" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Gold Gradients -->
+    <linearGradient id="goldLustre" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF6D8"/>
+      <stop offset="35%" stop-color="#E2C17D"/>
+      <stop offset="70%" stop-color="#B58E4C"/>
+      <stop offset="100%" stop-color="#7A5820"/>
+    </linearGradient>
+
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0BE"/>
+      <stop offset="50%" stop-color="#D7B66F"/>
+      <stop offset="100%" stop-color="#9C7733"/>
+    </linearGradient>
+
+    <!-- Saree Shading (Emerald Paithani) -->
+    <linearGradient id="nauvariGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E4C33"/>
+      <stop offset="40%" stop-color="#093825"/>
+      <stop offset="80%" stop-color="#042116"/>
+      <stop offset="100%" stop-color="#02140D"/>
+    </linearGradient>
+
+    <linearGradient id="palluMaroon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#80192A"/>
+      <stop offset="50%" stop-color="#550D1A"/>
+      <stop offset="100%" stop-color="#30050D"/>
+    </linearGradient>
+
+    <!-- Groom Kurtas Shading (Raw Silk Cream) -->
+    <linearGradient id="groomKurta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF8"/>
+      <stop offset="50%" stop-color="#EFE4CF"/>
+      <stop offset="100%" stop-color="#D4C4A8"/>
+    </linearGradient>
+
+    <!-- Maroon Pheta -->
+    <linearGradient id="phetaMaroon" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#992336"/>
+      <stop offset="40%" stop-color="#691220"/>
+      <stop offset="85%" stop-color="#420812"/>
+      <stop offset="100%" stop-color="#240308"/>
+    </linearGradient>
+
+    <!-- Diya Glow Filter -->
+    <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Drop Shadow for Figurines -->
+    <radialGradient id="baseShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Backdrop -->
+  <rect width="800" height="700" fill="url(#stageGlow)"/>
+
+  <!-- Ornate Mandap Arch Silhouette in Background -->
+  <g opacity="0.18">
+    <path d="M 120,600 L 120,260 Q 120,100 400,90 Q 680,100 680,260 L 680,600" fill="none" stroke="url(#goldLustre)" stroke-width="6"/>
+    <path d="M 150,600 L 150,280 Q 150,130 400,120 Q 650,130 650,280 L 650,600" fill="none" stroke="url(#goldLustre)" stroke-width="2" stroke-dasharray="8,6"/>
+    <circle cx="400" cy="90" r="16" fill="url(#goldLustre)"/>
+    <circle cx="400" cy="60" r="8" fill="url(#goldLustre)"/>
+  </g>
+
+  <!-- Hanging Marigold & Jasmine Garlands from Top -->
+  <g opacity="0.85">
+    <path d="M 80,0 Q 240,90 400,20 Q 560,90 720,0" fill="none" stroke="#D77D16" stroke-width="12" stroke-linecap="round" stroke-dasharray="14,4"/>
+    <path d="M 80,0 Q 240,90 400,20 Q 560,90 720,0" fill="none" stroke="#F5C02A" stroke-width="8" stroke-linecap="round" stroke-dasharray="10,6"/>
+    <path d="M 120,0 Q 260,110 400,50 Q 540,110 680,0" fill="none" stroke="#F7F1DD" stroke-width="5" stroke-linecap="round" stroke-dasharray="6,4"/>
+  </g>
+
+  <!-- Circular Mandap / Wooden Chowrang Stage -->
+  <ellipse cx="400" cy="580" rx="340" ry="85" fill="url(#baseShadow)"/>
+  <ellipse cx="400" cy="565" rx="320" ry="75" fill="#24060C" stroke="url(#goldTrim)" stroke-width="3"/>
+  <ellipse cx="400" cy="560" rx="300" ry="68" fill="#3D0B16" stroke="url(#goldTrim)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  
+  <!-- Flower Petals Scatter around Stage -->
+  <g opacity="0.8">
+    <ellipse cx="220" cy="570" rx="9" ry="5" fill="#E26D00" transform="rotate(25 220 570)"/>
+    <ellipse cx="240" cy="585" rx="8" ry="4" fill="#F8B800" transform="rotate(-15 240 585)"/>
+    <ellipse cx="270" cy="565" rx="7" ry="4" fill="#E82C48" transform="rotate(45 270 565)"/>
+    <ellipse cx="530" cy="575" rx="9" ry="5" fill="#F8B800" transform="rotate(10 530 575)"/>
+    <ellipse cx="560" cy="565" rx="8" ry="4" fill="#E26D00" transform="rotate(-30 560 565)"/>
+    <ellipse cx="585" cy="580" rx="7" ry="4" fill="#E82C48" transform="rotate(20 585 580)"/>
+  </g>
+
+  <!-- Left Traditional Brass Samai (Diya) -->
+  <g transform="translate(140, 360)">
+    <!-- Base -->
+    <ellipse cx="40" cy="190" rx="35" ry="12" fill="url(#goldLustre)"/>
+    <!-- Stem -->
+    <path d="M 36,190 L 37,80 L 43,80 L 44,190 Z" fill="url(#goldLustre)"/>
+    <ellipse cx="40" cy="140" rx="16" ry="6" fill="url(#goldLustre)"/>
+    <ellipse cx="40" cy="100" rx="20" ry="7" fill="url(#goldLustre)"/>
+    <!-- Bowl / Thali of Diya -->
+    <ellipse cx="40" cy="75" rx="32" ry="10" fill="url(#goldLustre)"/>
+    <!-- Golden Flame -->
+    <ellipse cx="40" cy="58" rx="8" ry="18" fill="#FFF2A3" filter="url(#flameGlow)"/>
+    <ellipse cx="40" cy="59" rx="5" ry="12" fill="#FFA500"/>
+    <circle cx="40" cy="58" r="22" fill="#FFA500" opacity="0.3" filter="url(#flameGlow)"/>
+  </g>
+
+  <!-- Right Traditional Brass Samai (Diya) -->
+  <g transform="translate(580, 360)">
+    <!-- Base -->
+    <ellipse cx="40" cy="190" rx="35" ry="12" fill="url(#goldLustre)"/>
+    <!-- Stem -->
+    <path d="M 36,190 L 37,80 L 43,80 L 44,190 Z" fill="url(#goldLustre)"/>
+    <ellipse cx="40" cy="140" rx="16" ry="6" fill="url(#goldLustre)"/>
+    <ellipse cx="40" cy="100" rx="20" ry="7" fill="url(#goldLustre)"/>
+    <!-- Bowl / Thali of Diya -->
+    <ellipse cx="40" cy="75" rx="32" ry="10" fill="url(#goldLustre)"/>
+    <!-- Golden Flame -->
+    <ellipse cx="40" cy="58" rx="8" ry="18" fill="#FFF2A3" filter="url(#flameGlow)"/>
+    <ellipse cx="40" cy="59" rx="5" ry="12" fill="#FFA500"/>
+    <circle cx="40" cy="58" r="22" fill="#FFA500" opacity="0.3" filter="url(#flameGlow)"/>
+  </g>
+
+  <!-- ==================== MINIATURE COUPLE (VIEWED FROM BEHIND) ==================== -->
+  
+  <!-- Figurines Combined Shadow on Chowrang -->
+  <ellipse cx="400" cy="535" rx="180" ry="40" fill="#140206" opacity="0.7"/>
+
+  <!-- ==================== BRIDE (LEFT-CENTER) ==================== -->
+  <g id="miniature-bride">
+    <!-- Nauvari Pleats & Base Saree Flare (From Behind) -->
+    <!-- Bottom Kashta fold draped gracefully in emerald green -->
+    <path d="M 270,530 C 260,490 280,440 310,400 C 330,370 360,370 380,410 C 390,460 380,510 370,535 C 330,545 295,540 270,530 Z" 
+          fill="url(#nauvariGreen)" stroke="#0E4C33" stroke-width="1.5"/>
+
+    <!-- Rich Gold Zari Borders on Nauvari Hem (Kashta border) -->
+    <path d="M 272,528 C 300,538 340,540 372,532" fill="none" stroke="url(#goldLustre)" stroke-width="10"/>
+    <path d="M 272,528 C 300,538 340,540 372,532" fill="none" stroke="#681525" stroke-width="3"/>
+    
+    <!-- Vertical Paithani Kashta Fold Center Crease with Gold Zari -->
+    <path d="M 335,405 C 332,450 334,490 338,536" fill="none" stroke="url(#goldLustre)" stroke-width="4"/>
+    <path d="M 334,405 C 331,450 333,490 337,536" fill="none" stroke="#0E4C33" stroke-width="1"/>
+
+    <!-- Bride Torso & Upper Back (Emerald Silk with Royal Maroon Pallu) -->
+    <path d="M 305,385 C 300,340 308,290 340,285 C 372,285 385,340 380,385 Z" fill="url(#nauvariGreen)"/>
+    
+    <!-- Regal Paithani Pallu Draped Across Right Shoulder and Down the Back -->
+    <path d="M 330,288 C 345,300 365,340 375,395 C 385,450 382,490 375,525 L 360,528 C 365,480 368,430 355,380 C 345,340 335,310 325,290 Z" 
+          fill="url(#palluMaroon)" stroke="url(#goldLustre)" stroke-width="2"/>
+    
+    <!-- Paithani Gold Zari Pallu Motif Detail (Peacock/Lotus Accent) -->
+    <ellipse cx="366" cy="440" rx="6" ry="12" fill="url(#goldLustre)" transform="rotate(-15 366 440)"/>
+    <ellipse cx="369" cy="470" rx="5" ry="10" fill="url(#goldLustre)" transform="rotate(-10 369 470)"/>
+
+    <!-- Bride Traditional Hair Bun (Ambada) Viewed from Behind -->
+    <!-- Head Base -->
+    <circle cx="342" cy="245" r="28" fill="#1C100B"/>
+    <!-- Elaborate Braided Ambada Bun -->
+    <ellipse cx="342" cy="238" rx="26" ry="24" fill="#0C0604"/>
+
+    <!-- Fragrant Gajra: Pure White Jasmine Flowers Encircling the Ambada -->
+    <circle cx="342" cy="214" r="7" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="325" cy="220" r="7" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="359" cy="220" r="7" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="317" cy="235" r="7.5" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="367" cy="235" r="7.5" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="320" cy="252" r="7" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="364" cy="252" r="7" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="332" cy="262" r="6.5" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+    <circle cx="352" cy="262" r="6.5" fill="#FFFFF0" stroke="#E2DFC5" stroke-width="1"/>
+
+    <!-- Gold Hair Brooch (Ambada Phool / Veni Ornament) at Center of Bun -->
+    <circle cx="342" cy="238" r="9" fill="url(#goldLustre)" stroke="#681525" stroke-width="1"/>
+    <circle cx="342" cy="238" r="4" fill="#A81D33"/>
+  </g>
+
+  <!-- ==================== GROOM (RIGHT-CENTER) ==================== -->
+  <g id="miniature-groom">
+    <!-- Traditional Dhoti / Churidar Base (Viewed from Behind) -->
+    <path d="M 415,530 C 410,480 415,440 430,410 C 450,380 490,380 515,410 C 530,445 535,490 525,530 C 490,540 450,540 415,530 Z" 
+          fill="url(#groomKurta)" stroke="#C6B599" stroke-width="1.5"/>
+
+    <!-- Raw Silk Kurta Back -->
+    <path d="M 405,395 C 400,345 410,290 445,285 C 485,285 500,345 495,395 Z" fill="url(#groomKurta)"/>
+
+    <!-- Royal Gold Zari Border on Kurta Collar & Hem -->
+    <path d="M 425,286 C 445,292 465,292 480,286" fill="none" stroke="url(#goldLustre)" stroke-width="4"/>
+    <path d="M 416,528 C 455,538 485,538 524,528" fill="none" stroke="url(#goldLustre)" stroke-width="5"/>
+
+    <!-- Royal Maroon Shela (Stole) Draped Over Groom's Left Shoulder -->
+    <path d="M 412,295 C 402,320 398,370 405,430 C 408,460 402,490 398,525 L 412,527 C 416,485 418,440 416,380 C 414,340 418,310 422,295 Z" 
+          fill="url(#palluMaroon)" stroke="url(#goldLustre)" stroke-width="2"/>
+    <path d="M 398,520 L 412,520" stroke="url(#goldLustre)" stroke-width="4"/>
+
+    <!-- Groom's Royal Maroon Maharashtrian Pheta (Turban) with Gold Zari & Kalgi -->
+    <!-- Head Base from Behind -->
+    <circle cx="452" cy="245" r="26" fill="#1C100B"/>
+
+    <!-- Pheta Base Fabric Layers and Swirls (Royal Maroon) -->
+    <ellipse cx="452" cy="235" rx="36" ry="28" fill="url(#phetaMaroon)"/>
+    <path d="M 420,240 Q 452,215 484,240 Q 452,260 420,240 Z" fill="#691220"/>
+    <path d="M 422,232 Q 452,210 482,232" fill="none" stroke="url(#goldLustre)" stroke-width="3"/>
+    <path d="M 426,222 Q 452,205 478,222" fill="none" stroke="url(#goldLustre)" stroke-width="2.5"/>
+
+    <!-- Pheta Plume / Tail (Shembi) on the top/side -->
+    <path d="M 430,220 C 420,195 415,170 425,160 C 435,165 440,190 438,215 Z" fill="url(#phetaMaroon)"/>
+    <path d="M 423,165 L 433,168" stroke="url(#goldLustre)" stroke-width="3"/>
+
+    <!-- Antique Gold Kalgi Brooch with Pearl Drop on Pheta -->
+    <ellipse cx="430" cy="205" rx="5" ry="8" fill="url(#goldLustre)"/>
+    <circle cx="430" cy="202" r="3" fill="#A81D33"/>
+    <circle cx="430" cy="216" r="2.5" fill="#FFFFF0"/>
+  </g>
+
+  <!-- Sweet Shared Gesture: Bride and Groom holding hands subtly in the middle -->
+  <g opacity="0.9">
+    <ellipse cx="395" cy="425" rx="12" ry="7" fill="url(#goldLustre)" stroke="#681525" stroke-width="1"/>
+  </g>
+
+  <!-- Foreground Golden Dust / Firefly Particles for Warm Ambient Atmosphere -->
+  <g opacity="0.6">
+    <circle cx="310" cy="180" r="2" fill="#FFEAA7"/>
+    <circle cx="480" cy="160" r="1.5" fill="#FFEAA7"/>
+    <circle cx="210" cy="340" r="2" fill="#FFEAA7"/>
+    <circle cx="620" cy="320" r="2.5" fill="#FFEAA7"/>
+    <circle cx="390" cy="310" r="1.5" fill="#FFEAA7"/>
+    <circle cx="510" cy="460" r="2" fill="#FFEAA7"/>
+    <circle cx="280" cy="470" r="1.5" fill="#FFEAA7"/>
+  </g>
+</svg>
