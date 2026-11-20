@@ -67,7 +67,7 @@ export default function OurStory() {
             <div className="relative rounded-3xl overflow-hidden border-4 border-gold-antique/80 shadow-2xl bg-gradient-to-b from-[#5E1220] to-[#2B060D] p-2.5 sm:p-3 group">
               <div className="rounded-2xl overflow-hidden relative">
                 <img
-                  src="/images/story-couple-sunset.jpg"
+                  src="./images/story-couple-sunset.jpg"
                   alt="Our Story - Neha & Chinmay Sunset"
                   className="w-full h-auto object-cover transform group-hover:scale-104 transition-transform duration-700"
                 />

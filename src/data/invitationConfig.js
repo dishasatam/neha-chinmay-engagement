@@ -62,7 +62,7 @@ export const invitationConfig = {
     }
   },
   music: {
-    src: '/music/romantic_instrumental.wav',
+    src: './music/romantic_instrumental.wav',
     title: 'Maharashtrian Royal Traditional Ambient Instrumental',
   },
   social: {

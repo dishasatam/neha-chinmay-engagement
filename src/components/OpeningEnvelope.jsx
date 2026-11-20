@@ -284,7 +284,7 @@ export default function OpeningEnvelope({ onOpenComplete }) {
 
                 {/* 3D Wax Seal Image - Larger, Grand & Regal */}
                 <img
-                  src="/images/wax-seal.svg"
+                  src="./images/wax-seal.svg"
                   alt="Royal Wax Seal"
                   className="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 drop-shadow-[0_18px_35px_rgba(0,0,0,0.85)] group-hover:drop-shadow-[0_24px_50px_rgba(215,182,111,0.7)] transition-all"
                 />

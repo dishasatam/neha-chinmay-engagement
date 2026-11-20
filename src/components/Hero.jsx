@@ -130,11 +130,11 @@ export default function Hero() {
         >
           <div className="relative rounded-2xl overflow-hidden">
             <img
-              src="/images/hero-couple-realistic.jpg"
+              src="./images/hero-couple-realistic.jpg"
               alt="Neha & Chinmay - Royal Maharashtrian Engagement"
               className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-103 drop-shadow-2xl"
               onError={(e) => {
-                e.currentTarget.src = '/images/hero-main-card.jpg';
+                e.currentTarget.src = './images/hero-main-card.jpg';
               }}
             />
 

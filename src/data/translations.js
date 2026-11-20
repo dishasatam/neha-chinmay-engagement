@@ -127,42 +127,42 @@ export const translations = {
           title: 'Golden Engagement Rings',
           caption: 'Two timeless gold and diamond rings symbolizing an eternal sacred promise',
           category: 'Sacred Rings',
-          src: '/images/gallery-rings.jpg'
+          src: './images/gallery-rings.jpg'
         },
         {
           id: 2,
           title: 'Auspicious Floral Mandap',
           caption: 'Traditional carved pillars draped with fragrant fresh marigolds and mango leaf toran',
           category: 'Mandap',
-          src: '/images/gallery-mandap.jpg'
+          src: './images/gallery-mandap.jpg'
         },
         {
           id: 3,
           title: 'Illuminating Brass Samai Diyas',
           caption: 'Handcrafted traditional oil lamps illuminating the sacred ceremonial altar',
           category: 'Auspicious Altar',
-          src: '/images/gallery-diya.jpg'
+          src: './images/gallery-diya.jpg'
         },
         {
           id: 4,
           title: 'Royal Celebration Stage',
           caption: 'Imperial floral stage set with warm ambient lighting and velvet bolster seating',
           category: 'Royal Stage',
-          src: '/images/gallery-stage.jpg'
+          src: './images/gallery-stage.jpg'
         },
         {
           id: 5,
           title: 'Maharashtrian Bridal Ornaments',
           caption: 'Timeless Kolhapuri Saaj, Thushi, and pearl Nath celebrating timeless heritage',
           category: 'Jewellery',
-          src: '/images/gallery-jewellery.jpg'
+          src: './images/gallery-jewellery.jpg'
         },
         {
           id: 6,
           title: 'Festive Marigold & Jasmine Blooms',
           caption: 'Fragrant fresh flowers bringing auspicious blessings and vibrancy to the celebration',
           category: 'Decor',
-          src: '/images/gallery-flowers.jpg'
+          src: './images/gallery-flowers.jpg'
         }
       ]
     },
@@ -376,42 +376,42 @@ export const translations = {
           title: 'सुवर्ण मुद्रिका (अंगठ्या)',
           caption: 'सोन्याची अंगठी आणि हिऱ्याची झळाळी, आयुष्यभराच्या साथीचे प्रतीक',
           category: 'मुद्रिका',
-          src: '/images/gallery-rings.jpg'
+          src: './images/gallery-rings.jpg'
         },
         {
           id: 2,
           title: 'पारंपारिक नक्षीदार मंडप',
           caption: 'झेंडूच्या माळा आणि सोन्याच्या नक्षीदार खांबांनी सजवलेला पवित्र मंडप',
           category: 'मंडप',
-          src: '/images/gallery-mandap.jpg'
+          src: './images/gallery-mandap.jpg'
         },
         {
           id: 3,
           title: 'मंगल समई आणि दिवे',
           caption: 'सोहळ्याला मंगल प्रकाश देणाऱ्या पारंपरिक पितळी समया आणि रांगोळी',
           category: 'पूजा',
-          src: '/images/gallery-diya.jpg'
+          src: './images/gallery-diya.jpg'
         },
         {
           id: 4,
           title: 'राजेशाही मंचाची सजावट',
           caption: 'साखरपुड्यासाठी सजवलेला मनमोहक पुष्पमंच आणि दीपमाळा',
           category: 'मंच',
-          src: '/images/gallery-stage.jpg'
+          src: './images/gallery-stage.jpg'
         },
         {
           id: 5,
           title: 'महाराष्ट्रीयन पारंपारिक दागिने',
           caption: 'कोल्हापुरी साज, ठुशी आणि मोत्याची नथ यांचे पारंपरिक सौंदर्य',
           category: 'दागिने',
-          src: '/images/gallery-jewellery.jpg'
+          src: './images/gallery-jewellery.jpg'
         },
         {
           id: 6,
           title: 'झेंडू आणि फुलांची आरास',
           caption: 'सोहळ्याची शोभा वाढवणारी मनमोहक आणि सुवासिक फुले',
           category: 'सजावट',
-          src: '/images/gallery-flowers.jpg'
+          src: './images/gallery-flowers.jpg'
         }
       ]
     },

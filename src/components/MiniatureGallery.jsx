@@ -11,37 +11,37 @@ export default function MiniatureGallery() {
 
   const galleryItems = [
     {
-      src: '/images/gallery-rings-luxury.jpg',
+      src: './images/gallery-rings-luxury.jpg',
       title: lang === 'mr' ? 'सुवर्ण मुद्रिका (साखरपुडा अंगठ्या)' : 'Golden Engagement Rings',
       caption: lang === 'mr' ? 'सोन्याची अंगठी आणि हिऱ्याची झळाळी, आयुष्यभराच्या साथीचे पवित्र प्रतीक' : 'Two timeless gold and diamond rings symbolizing an eternal sacred promise',
       category: lang === 'mr' ? 'शुभ मुद्रिका' : 'Sacred Rings',
     },
     {
-      src: '/images/gallery-thali.jpg',
+      src: './images/gallery-thali.jpg',
       title: lang === 'mr' ? 'साखरपुडा तबक आणि पेढे' : 'Sakharpuda Thali & Sweets',
       caption: lang === 'mr' ? 'साखर, पारंपरिक पेढे, श्रीफळ आणि ताज्या फुलांनी सजवलेले मंगल तबक' : 'Traditional ceremonial brass thali with auspicious sugar crystals, pedha sweets & sacred offerings',
       category: lang === 'mr' ? 'साखरपुडा तबक' : 'Ceremonial Thali',
     },
     {
-      src: '/images/gallery-diya.jpg',
+      src: './images/gallery-diya.jpg',
       title: lang === 'mr' ? 'मंगल समई आणि दीपमाळा' : 'Illuminating Brass Samai Diya',
       caption: lang === 'mr' ? 'सोहळ्याला मंगल प्रकाश देणाऱ्या पारंपरिक पितळी समया आणि सुगंधी फुलांची आरास' : 'Handcrafted traditional oil lamp illuminating the sacred ceremonial altar with warm festive light',
       category: lang === 'mr' ? 'मंगल पूजा' : 'Auspicious Altar',
     },
     {
-      src: '/images/gallery-stage.jpg',
+      src: './images/gallery-stage.jpg',
       title: lang === 'mr' ? 'साखरपुडा मंचाची सजावट' : 'Royal Engagement Stage',
       caption: lang === 'mr' ? 'साखरपुड्यासाठी सजवलेला मनमोहक पुष्पमंच आणि दीपमाळा' : 'Imperial floral stage set with warm ambient lighting and velvet bolster seating',
       category: lang === 'mr' ? 'राजेशाही मंच' : 'Royal Stage',
     },
     {
-      src: '/images/gallery-jewellery.jpg',
+      src: './images/gallery-jewellery.jpg',
       title: lang === 'mr' ? 'पारंपारिक दागिने' : 'Maharashtrian Bridal Ornaments',
       caption: lang === 'mr' ? 'कोल्हापुरी साज, ठुशी आणि मोत्याची नथ यांचे पारंपरिक सौंदर्य' : 'Timeless Kolhapuri Saaj, Thushi, and pearl Nath celebrating timeless heritage',
       category: lang === 'mr' ? 'दागिने' : 'Jewellery',
     },
     {
-      src: '/images/gallery-flowers.jpg',
+      src: './images/gallery-flowers.jpg',
       title: lang === 'mr' ? 'झेंडू आणि फुलांची आरास' : 'Festive Marigold & Jasmine Blooms',
       caption: lang === 'mr' ? 'सोहळ्याची शोभा वाढवणारी मनमोहक आणि सुवासिक फुले' : 'Fragrant fresh flowers bringing auspicious blessings and vibrancy to the celebration',
       category: lang === 'mr' ? 'पुष्प सजावट' : 'Floral Decor',
