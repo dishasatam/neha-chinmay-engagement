@@ -1,133 +1,100 @@
-# Neha & Chinmay – Royal Maharashtrian Engagement Invitation
+# 💍 Neha & Chinmay — Royal Maharashtrian Engagement Invitation
+### साखरपुडा निमंत्रण पत्रिका | शनिवार, १९ डिसेंबर २०२६
 
-A luxury digital engagement invitation website designed and built with **React**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Supabase**.
+A luxury digital engagement invitation website designed and built with **React 19**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Supabase Real-Time Cloud Database**.
 
-Featuring artistic 3D miniature Maharashtrian bride and groom figurines, mandatory guest identification, anonymous browser visit tracking, Asian/Kolkata countdown, complete bilingual (English / Marathi) support, and a private Bride & Groom analytics dashboard.
+Featuring a royal Peshwai aesthetic in deep velvet maroon and antique gold, artistic Maharashtrian couple figurines, interactive wax seal envelope reveal, real-time cross-device guest tracking, bilingual (English & मराठी) switch, and a private **Bride & Groom Admin Analytics Portal**.
 
 ---
 
-## 👑 Features & Architecture
+## 🌸 Ceremony Details
 
-1. **Opening Envelope Experience**: Full-screen royal maroon envelope with gold wax seal, floating petals, and smooth interactive opening animation.
-2. **Mandatory Guest Identification**: Guests enter their **First Name** and **Surname** with validation (supports Devanagari & Latin letters, rejects whitespace, 2–50 char limits).
-3. **Browser UUID & Inactivity Tracking**:
-   - Each browser receives a unique local UUID.
-   - Returning visits are recognized automatically without re-prompting.
-   - 30-minute inactivity window logic to count genuine new visits (refreshes inside an active session do not inflate counts).
-   - "Change Guest" feature allows multiple family members to use the same browser.
-4. **Main Hero Section**: Centerpiece miniature couple figurine viewed from behind in traditional Maharashtrian emerald Nauvari, flower-adorned bun (ambada with gajra), mundavalya, cream kurta, and royal maroon pheta.
-5. **Traditional Invitation Card**: Elegant ivory card with antique gold borders, shlokas, and formal bilingual invitation.
-6. **Our Story**: Artistic 3-stage milestone journey with miniature imagery.
-7. **Live Countdown**: Animated golden cards counting down to 18 December 2026 in `Asia/Kolkata` (IST) with a clear disclaimer that ceremony time will be announced.
-8. **Event Details**: Configurable event cards with date, time, and venue placeholders.
-9. **Miniature Celebration Gallery**: 8-item responsive gallery featuring traditional mandap, gold rings, brass diyas, torans, jewellery, and celebration stage with interactive lightbox.
-10. **Guest Blessings**: Optional guest message form with rate limiting, character validation, and admin moderation.
-11. **Footer & Sharing**: WhatsApp share with pre-filled message, copy link, and dynamic QR Code pointing to the deployed URL.
-12. **Music System**: Floating toggle with audio wave animation, HTML5 MP3 support, and a built-in graceful Web Audio API ambient chime harmonic fallback.
-13. **Complete English / मराठी Language Switcher**: Persistent language toggle affecting all headings, shlokas, buttons, and validation.
-14. **Private Bride & Groom Analytics Portal (`/admin`)**:
-    - Restricted to Neha and Chinmay via Supabase Auth.
-    - Statistics: Total Visits, Unique Guests, Repeat Visitors, Today's Visits.
-    - Interactive 14-day daily visit line chart and monthly bar chart (Recharts).
-    - Visitor table with search by guest name, date sorting, and CSV export.
+| Detail | Information (English) | माहिती (मराठी) |
+| :--- | :--- | :--- |
+| **Bride (वधू)** | **Neha Prabhakar Kadam** *(D/o Smt. & Shri Prabhakar Kadam)* | **चि. सौ. कां. नेहा प्रभाकर कदम** *(सुपुत्री: सौ. व श्री. प्रभाकर कदम)* |
+| **Groom (वर)** | **Chinmay Devidas Pawar** *(S/o Smt. & Shri Devidas Pawar)* | **चि. चिन्मय देविदास पवार** *(सुपुत्र: सौ. व श्री. देविदास पवार)* |
+| **Date (दिनांक)** | **Saturday, 19 December 2026** | **शनिवार, १९ डिसेंबर २०२६** |
+| **Muhurat (शुभ मुहूर्त)** | **10:30 AM (Auspicious Muhurat)** | **सकाळी १०:३० वा. (शुभ मुहूर्त)** |
+| **Venue (स्थळ)** | **Supreme Banquets Hall**, Manpada, Thane (West) | **सुप्रीम बँक्वेट्स हॉल**, मानपाडा जंक्शन, ठाणे (पश्चिम) |
+| **Location Map** | [Google Maps Navigation](https://maps.google.com/?q=Supreme+Banquets+Hall,+Manpada,+Thane+West,+Thane+400610) | [गुगल मॅप्स नकाशा](https://maps.google.com/?q=Supreme+Banquets+Hall,+Manpada,+Thane+West,+Thane+400610) |
+
+---
+
+## ✨ Key Features & User Experience
+
+1. **👑 Royal Opening Envelope**: Full-screen royal maroon velvet envelope with Lord Ganesha crest, gold wax seal, floating marigold/rose petals, and a smooth unsealing animation.
+2. **✍️ Guest Identification**: Guests enter their **First Name** and **Surname** with validation (supports Devanagari & Latin letters) before entering the grand celebration.
+3. **📊 Real-Time Cross-Device Visitor Logging (Supabase)**:
+   - Automatic cloud database synchronization when guests open the invitation on WhatsApp from anywhere in the world.
+   - Tracks unique visitors, total visits, last activity timestamp, and device type (Mobile / Desktop).
+   - Inactivity window logic prevents page refreshes from artificially inflating visit counts.
+4. **⏳ Auspicious Muhurat Countdown**: Live animated countdown ticking down to **19 December 2026 at 10:30 AM IST** (`Asia/Kolkata`).
+5. **📍 Interactive Venue Card**: Complete venue address, landmark details, and 1-click Google Maps directions to Supreme Banquets Hall, Thane.
+6. **🖼️ Miniature Cultural Gallery**: Curated photo gallery featuring traditional mandap, gold rings, brass diyas, torans, and jewellery with high-res lightbox inspection.
+7. **📖 Our Story**: 3-stage romantic journey celebrating how Neha & Chinmay met, fell in love, and decided on forever.
+8. **💌 Guest Blessings & Wishes**: Heartfelt guestbook allowing family and friends to send blessings directly stored in the cloud database.
+9. **🌐 100% Bilingual (मराठी / English)**: Instant one-click toggle across all shlokas, headings, cards, dates, and buttons.
+10. **📲 WhatsApp Sharing & QR Code**: Custom pre-filled bilingual WhatsApp message and dynamic scannable QR code.
+11. **🎵 Royal Ambient Instrumental**: Background traditional shehnai/sitar instrumental with audio wave visualizer and sound toggle.
+12. **🔐 Private Bride & Groom Dashboard (`/admin`)**:
+    - Private analytics dashboard for Neha & Chinmay to monitor guest visits in real time.
+    - Searchable and sortable guest list.
     - Blessings moderation panel.
+    - **1-Click Export to CSV / Excel** for wedding planning and seating charts.
 
 ---
 
-## 🛠️ Project Structure
+## 🔐 Bride & Groom Dashboard Access
 
-```
-engagement-invitation/
-│
-├── public/
-│   ├── images/
-│   │   ├── couple-miniature-hero.svg
-│   │   ├── wax-seal.svg
-│   │   ├── mandap-miniature.svg
-│   │   ├── rings-miniature.svg
-│   │   ├── diyas-miniature.svg
-│   │   ├── toran-miniature.svg
-│   │   ├── jewellery-miniature.svg
-│   │   ├── paithani-motif.svg
-│   │   └── stage-miniature.svg
-│   ├── music/
-│   │   └── README.md
-│   └── favicon.svg
-│
-├── src/
-│   ├── components/
-│   │   ├── OpeningEnvelope.jsx
-│   │   ├── GuestWelcome.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Invitation.jsx
-│   │   ├── OurStory.jsx
-│   │   ├── Countdown.jsx
-│   │   ├── EventDetails.jsx
-│   │   ├── MiniatureGallery.jsx
-│   │   ├── Blessings.jsx
-│   │   ├── MusicPlayer.jsx
-│   │   └── Footer.jsx
-│   │
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── AdminLogin.jsx
-│   │   ├── AdminDashboard.jsx
-│   │   ├── Visitors.jsx
-│   │   └── Settings.jsx
-│   │
-│   ├── hooks/
-│   │   ├── useVisitorTracking.js
-│   │   └── useLanguage.jsx
-│   │
-│   ├── lib/
-│   │   └── supabase.js
-│   │
-│   ├── data/
-│   │   ├── invitationConfig.js
-│   │   └── translations.js
-│   │
-│   ├── styles/
-│   │   └── index.css
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── supabase/
-│   ├── functions/
-│   │   └── track-visitor/
-│   │       └── index.ts
-│   └── migrations/
-│       └── 20261103000000_create_engagement_tables.sql
-│
-├── .env.example
-├── vercel.json
-├── package.json
-└── README.md
-```
+The private analytics portal is accessible by adding `/admin` or `#admin` to the website URL.
+
+* **URL:** `https://your-domain.com/admin`
+* **Default Username:** `admin` *(or `neha` / `chinmay`)*
+* **Default Password:** `admin123`
+* **Key Capabilities:**
+  - View live guests connecting from WhatsApp across mobile devices.
+  - Read, approve, or delete guest blessings.
+  - Download all guest data in CSV/Excel spreadsheet format.
+  - Change dashboard login password anytime from Settings.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+* **Frontend Framework:** React 19 + Vite
+* **Styling & Theme:** Tailwind CSS (Custom Royal Maroon `#310912` & Antique Gold `#D4AF37` palette)
+* **Animations:** Framer Motion (Envelope unsealing, petal physics, cards reveal)
+* **Database & Auth:** Supabase (PostgreSQL tables: `visitors`, `visitor_sessions`, `blessings`)
+* **Icons:** Lucide React
+* **Confetti & Effects:** Canvas Confetti
 
 ---
 
 ## 🚀 Local Development Setup
 
-### 1. Install Dependencies
+### 1. Clone the Repository
 ```bash
-cd D:\EngagementInvitation
+git clone https://github.com/dishasatam/neha-chinmay-engagement.git
+cd neha-chinmay-engagement
+```
+
+### 2. Install Dependencies
+```bash
 npm install
 ```
 
-### 2. Configure Environment
+### 3. Environment Configuration
 Copy `.env.example` to `.env`:
 ```bash
 cp .env.example .env
 ```
-Populate your Supabase Project URL and Public Anon Key:
+Add your Supabase Cloud credentials (optional, as active cloud fallbacks are pre-wired):
 ```env
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=eyJhbGciOi...
-VITE_ADMIN_EMAILS=neha@patil.com,chinmay@kulkarni.com
+VITE_SUPABASE_URL=https://vipdwboiormqkhkzlwpq.supabase.co
+VITE_SUPABASE_ANON_KEY=sb_publishable_TJmYc4p1iEIUaSbHt3bghQ_Cg8NhHBC
 ```
 
-### 3. Run Development Server
+### 4. Start Local Development Server
 ```bash
 npm run dev
 ```
@@ -135,63 +102,37 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🗄️ Supabase Setup Guide
+## 🗄️ Database Setup (Supabase)
 
-### 1. Create a Supabase Project
-1. Log in to [supabase.com](https://supabase.com/) and click **New Project**.
-2. Name the project `neha-chinmay-engagement`.
-3. Choose a nearby region (e.g., `ap-south-1` Mumbai) and create a strong database password.
+The complete SQL schema is provided in [`supabase_schema.sql`](./supabase_schema.sql).
 
-### 2. Retrieve API Keys
-1. In the Supabase Dashboard, go to **Project Settings** > **API**.
-2. Copy the **Project URL** and paste it into `VITE_SUPABASE_URL` in `.env`.
-3. Copy the **Project API Key (`anon` `public`)** and paste it into `VITE_SUPABASE_ANON_KEY` in `.env`.
-
-### 3. Deploy Database Migrations
-1. In Supabase Dashboard, open **SQL Editor**.
-2. Click **New Query**, paste the contents of `supabase/migrations/20261103000000_create_engagement_tables.sql`, and click **Run**.
-3. This creates:
-   - `visitors` table with unique `browser_id`
-   - `visitor_sessions` table with session timeout tracking
-   - `blessings` table with moderation statuses
-   - `admin_profiles` table for authorized accounts
-   - Row Level Security (RLS) policies protecting visitor privacy
-   - `record_guest_visit` atomic stored procedure
-
-### 4. Create Authorized Accounts for Neha & Chinmay
-1. In Supabase Dashboard, go to **Authentication** > **Users**.
-2. Click **Add User** > **Create User**.
-3. Create Neha's account (e.g. `neha@patil.com` + password).
-4. Create Chinmay's account (e.g. `chinmay@kulkarni.com` + password).
-5. In SQL Editor, add both to `admin_profiles`:
-```sql
-INSERT INTO public.admin_profiles (auth_user_id, role)
-SELECT id, 'admin' FROM auth.users WHERE email IN ('neha@patil.com', 'chinmay@kulkarni.com');
-```
-
-### 5. Deploy Edge Function (Optional)
-If you use the Supabase CLI:
-```bash
-supabase functions deploy track-visitor
-```
+To deploy or inspect tables:
+1. Open your project at [Supabase](https://supabase.com/).
+2. Navigate to **SQL Editor** &rarr; paste [`supabase_schema.sql`](./supabase_schema.sql) &rarr; click **Run**.
+3. Tables created:
+   - `public.visitors` (Unique guest profiles, visit counts, timestamps, devices)
+   - `public.visitor_sessions` (Detailed session duration logs)
+   - `public.blessings` (Guestbook messages and approval status)
+4. Row Level Security (RLS) is enabled with public guest insert and read policies.
 
 ---
 
-## 🌐 Deploy to Vercel
+## 🌐 Deployment
 
-1. Push this repository to GitHub or GitLab.
-2. In [vercel.com](https://vercel.com/), click **Add New** > **Project** and import the repository.
-3. Framework Preset: **Vite**.
-4. In **Environment Variables**, add:
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
-   - `VITE_ADMIN_EMAILS`
-5. Click **Deploy**.
-6. The `vercel.json` file automatically handles SPA rewrites for `/admin`.
+### Deploy to Vercel (Recommended)
+1. Go to [vercel.com/new](https://vercel.com/new).
+2. Import `dishasatam/neha-chinmay-engagement`.
+3. Framework Preset: **Vite** (auto-detected).
+4. Click **Deploy**. Vercel will build and serve the live site in ~25 seconds with full Single-Page App (SPA) routing powered by [`vercel.json`](./vercel.json).
+
+### Deploy to GitHub Pages
+1. Go to **Repository Settings** &rarr; **Pages**.
+2. Under **Build and deployment** &rarr; **Source**, select **GitHub Actions**.
+3. The `.github/workflows/deploy.yml` workflow automatically builds and publishes the production site.
 
 ---
 
-## 🎵 Background Music
+## 📜 License & Copyright
 
-Place any licensed romantic instrumental MP3 at `public/music/romantic_instrumental.mp3`.
-If absent, the website gracefully falls back to the embedded Web Audio API ambient chime harmonic synthesizer without throwing errors.
+Crafted with love and blessings for **Neha & Chinmay**'s auspicious Sakharpuda ceremony.  
+All graphics, miniature figurines, paithani motifs, and invitation designs &copy; 2026.
