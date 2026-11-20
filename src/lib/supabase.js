@@ -255,144 +255,31 @@ export async function submitBlessing({ visitorId, guestName, message }) {
   }
 }
 
-// Seed family visitors to provide a rich, authentic wedding portal experience
-const SEED_FAMILY_VISITORS = [
-  {
-    id: 'visitor-seed-disha-satam',
-    first_name: 'Disha',
-    surname: 'Satam',
-    visit_count: 7,
-    first_visit: new Date(Date.now() - 3600000 * 24).toISOString(),
-    last_visit: new Date().toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 24).toISOString(),
-    device: 'Desktop Browser',
-    visit_history: [
-      { visit_number: 7, session_id: 'session-disha-7', timestamp: new Date().toISOString(), device: 'Desktop Browser' },
-      { visit_number: 6, session_id: 'session-disha-6', timestamp: new Date(Date.now() - 3600000 * 2).toISOString(), device: 'Desktop Browser' },
-      { visit_number: 5, session_id: 'session-disha-5', timestamp: new Date(Date.now() - 3600000 * 5).toISOString(), device: 'Mobile Device' },
-      { visit_number: 4, session_id: 'session-disha-4', timestamp: new Date(Date.now() - 3600000 * 10).toISOString(), device: 'Mobile Device' },
-      { visit_number: 3, session_id: 'session-disha-3', timestamp: new Date(Date.now() - 3600000 * 16).toISOString(), device: 'Desktop Browser' },
-      { visit_number: 2, session_id: 'session-disha-2', timestamp: new Date(Date.now() - 3600000 * 20).toISOString(), device: 'Mobile Device' },
-      { visit_number: 1, session_id: 'session-disha-1', timestamp: new Date(Date.now() - 3600000 * 24).toISOString(), device: 'Desktop Browser' },
-    ],
-  },
-  {
-    id: 'visitor-seed-aarti-pawar',
-    first_name: 'Aarti',
-    surname: 'Pawar',
-    visit_count: 4,
-    first_visit: new Date(Date.now() - 3600000 * 18).toISOString(),
-    last_visit: new Date(Date.now() - 3600000 * 1).toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 18).toISOString(),
-    device: 'Mobile (Android)',
-    visit_history: [
-      { visit_number: 4, session_id: 'session-aarti-4', timestamp: new Date(Date.now() - 3600000 * 1).toISOString(), device: 'Mobile (Android)' },
-      { visit_number: 3, session_id: 'session-aarti-3', timestamp: new Date(Date.now() - 3600000 * 6).toISOString(), device: 'Mobile (Android)' },
-      { visit_number: 2, session_id: 'session-aarti-2', timestamp: new Date(Date.now() - 3600000 * 12).toISOString(), device: 'Mobile (Android)' },
-      { visit_number: 1, session_id: 'session-aarti-1', timestamp: new Date(Date.now() - 3600000 * 18).toISOString(), device: 'Desktop Browser' },
-    ],
-  },
-  {
-    id: 'visitor-seed-rahul-patil',
-    first_name: 'Rahul',
-    surname: 'Patil',
-    visit_count: 3,
-    first_visit: new Date(Date.now() - 3600000 * 14).toISOString(),
-    last_visit: new Date(Date.now() - 3600000 * 3).toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 14).toISOString(),
-    device: 'Mobile (iPhone)',
-    visit_history: [
-      { visit_number: 3, session_id: 'session-rahul-3', timestamp: new Date(Date.now() - 3600000 * 3).toISOString(), device: 'Mobile (iPhone)' },
-      { visit_number: 2, session_id: 'session-rahul-2', timestamp: new Date(Date.now() - 3600000 * 8).toISOString(), device: 'Mobile (iPhone)' },
-      { visit_number: 1, session_id: 'session-rahul-1', timestamp: new Date(Date.now() - 3600000 * 14).toISOString(), device: 'Desktop Browser' },
-    ],
-  },
-  {
-    id: 'visitor-seed-sneha-kadam',
-    first_name: 'Sneha',
-    surname: 'Kadam',
-    visit_count: 5,
-    first_visit: new Date(Date.now() - 3600000 * 22).toISOString(),
-    last_visit: new Date(Date.now() - 3600000 * 2).toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 22).toISOString(),
-    device: 'Mobile (iPhone)',
-    visit_history: [
-      { visit_number: 5, session_id: 'session-sneha-5', timestamp: new Date(Date.now() - 3600000 * 2).toISOString(), device: 'Mobile (iPhone)' },
-      { visit_number: 4, session_id: 'session-sneha-4', timestamp: new Date(Date.now() - 3600000 * 7).toISOString(), device: 'Mobile (iPhone)' },
-      { visit_number: 3, session_id: 'session-sneha-3', timestamp: new Date(Date.now() - 3600000 * 13).toISOString(), device: 'Desktop Browser' },
-      { visit_number: 2, session_id: 'session-sneha-2', timestamp: new Date(Date.now() - 3600000 * 17).toISOString(), device: 'Mobile (iPhone)' },
-      { visit_number: 1, session_id: 'session-sneha-1', timestamp: new Date(Date.now() - 3600000 * 22).toISOString(), device: 'Desktop Browser' },
-    ],
-  },
-  {
-    id: 'visitor-seed-vikram-shinde',
-    first_name: 'Vikram',
-    surname: 'Shinde',
-    visit_count: 2,
-    first_visit: new Date(Date.now() - 3600000 * 12).toISOString(),
-    last_visit: new Date(Date.now() - 3600000 * 4).toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 12).toISOString(),
-    device: 'Desktop Browser',
-    visit_history: [
-      { visit_number: 2, session_id: 'session-vikram-2', timestamp: new Date(Date.now() - 3600000 * 4).toISOString(), device: 'Desktop Browser' },
-      { visit_number: 1, session_id: 'session-vikram-1', timestamp: new Date(Date.now() - 3600000 * 12).toISOString(), device: 'Desktop Browser' },
-    ],
-  },
-  {
-    id: 'visitor-seed-priya-kulkarni',
-    first_name: 'Priya',
-    surname: 'Kulkarni',
-    visit_count: 2,
-    first_visit: new Date(Date.now() - 3600000 * 10).toISOString(),
-    last_visit: new Date(Date.now() - 3600000 * 5).toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 10).toISOString(),
-    device: 'Mobile (Android)',
-    visit_history: [
-      { visit_number: 2, session_id: 'session-priya-2', timestamp: new Date(Date.now() - 3600000 * 5).toISOString(), device: 'Mobile (Android)' },
-      { visit_number: 1, session_id: 'session-priya-1', timestamp: new Date(Date.now() - 3600000 * 10).toISOString(), device: 'Mobile (Android)' },
-    ],
-  },
-  {
-    id: 'visitor-seed-mahesh-pawar',
-    first_name: 'Mahesh',
-    surname: 'Pawar',
-    visit_count: 3,
-    first_visit: new Date(Date.now() - 3600000 * 15).toISOString(),
-    last_visit: new Date(Date.now() - 3600000 * 6).toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 15).toISOString(),
-    device: 'Desktop Browser',
-    visit_history: [
-      { visit_number: 3, session_id: 'session-mahesh-3', timestamp: new Date(Date.now() - 3600000 * 6).toISOString(), device: 'Desktop Browser' },
-      { visit_number: 2, session_id: 'session-mahesh-2', timestamp: new Date(Date.now() - 3600000 * 11).toISOString(), device: 'Desktop Browser' },
-      { visit_number: 1, session_id: 'session-mahesh-1', timestamp: new Date(Date.now() - 3600000 * 15).toISOString(), device: 'Mobile (Android)' },
-    ],
-  },
-  {
-    id: 'visitor-seed-kunal-joshi',
-    first_name: 'Kunal',
-    surname: 'Joshi',
-    visit_count: 1,
-    first_visit: new Date(Date.now() - 3600000 * 8).toISOString(),
-    last_visit: new Date(Date.now() - 3600000 * 8).toISOString(),
-    created_at: new Date(Date.now() - 3600000 * 8).toISOString(),
-    device: 'Mobile (iPhone)',
-    visit_history: [
-      { visit_number: 1, session_id: 'session-kunal-1', timestamp: new Date(Date.now() - 3600000 * 8).toISOString(), device: 'Mobile (iPhone)' },
-    ],
-  },
-];
+// Production mode: zero fake demo seeds
+const SEED_FAMILY_VISITORS = [];
+const SEED_FAMILY_BLESSINGS = [];
 
 export function initializeSeedsIfFirstRun() {
   if (typeof window === 'undefined') return;
-  if (!localStorage.getItem('nc_seeds_initialized')) {
-    if (!localStorage.getItem('nc_local_visitors_log')) {
-      localStorage.setItem('nc_local_visitors_log', JSON.stringify(SEED_FAMILY_VISITORS));
+  try {
+    // Automatically cleanse any cached mock demo records
+    const rawVisitors = localStorage.getItem('nc_local_visitors_log');
+    if (rawVisitors) {
+      const parsed = JSON.parse(rawVisitors);
+      if (Array.isArray(parsed)) {
+        const cleaned = parsed.filter(v => v.id && !v.id.includes('seed'));
+        localStorage.setItem('nc_local_visitors_log', JSON.stringify(cleaned));
+      }
     }
-    if (!localStorage.getItem('nc_guest_blessings')) {
-      localStorage.setItem('nc_guest_blessings', JSON.stringify(SEED_FAMILY_BLESSINGS));
+    const rawBlessings = localStorage.getItem('nc_guest_blessings');
+    if (rawBlessings) {
+      const parsedB = JSON.parse(rawBlessings);
+      if (Array.isArray(parsedB)) {
+        const cleanedB = parsedB.filter(b => b.id && !b.id.includes('seed'));
+        localStorage.setItem('nc_guest_blessings', JSON.stringify(cleanedB));
+      }
     }
-    localStorage.setItem('nc_seeds_initialized', 'true');
-  }
+  } catch {}
 }
 
 /**
@@ -486,108 +373,43 @@ export async function getAdminSessions() {
   }
 }
 
-// Seed family blessings to give a realistic and heartwarming guestbook
-const SEED_FAMILY_BLESSINGS = [
-  {
-    id: 'blessing-seed-disha',
-    guest_name: 'Disha Satam',
-    message: 'stay blessed',
-    approval_status: 'approved',
-    created_at: new Date(Date.now() - 3600000 * 4).toISOString(),
-  },
-  {
-    id: 'blessing-seed-aarti',
-    guest_name: 'Aarti Pawar',
-    message: 'Heartiest congratulations to my dearest Chinmay Dada & Neha Vahini! May your journey together be blessed with endless happiness, prosperity, and divine love.',
-    approval_status: 'approved',
-    created_at: new Date(Date.now() - 3600000 * 2).toISOString(),
-  },
-  {
-    id: 'blessing-seed-sneha',
-    guest_name: 'Sneha Kadam',
-    message: 'So thrilled and overjoyed for my sweetest sister Neha & Chinmay Dada! Wishing you both the most romantic Sakharpuda and a lifetime of smiles!',
-    approval_status: 'approved',
-    created_at: new Date(Date.now() - 3600000 * 5).toISOString(),
-  },
-  {
-    id: 'blessing-seed-rahul',
-    guest_name: 'Rahul Patil',
-    message: 'Heartiest congratulations to Neha and Chinmay! Wishing you both a lifetime of love, laughter, and endless togetherness.',
-    approval_status: 'approved',
-    created_at: new Date(Date.now() - 3600000 * 8).toISOString(),
-  },
-  {
-    id: 'blessing-seed-mahesh',
-    guest_name: 'Mahesh Pawar',
-    message: 'अखंड सौभाग्यवती भव! नेहा आणि चिन्मय यांना साखरपुड्याच्या आणि भावी वैवाहिक आयुष्याच्या मनःपूर्वक मंगल शुभेच्छा!',
-    approval_status: 'approved',
-    created_at: new Date(Date.now() - 3600000 * 12).toISOString(),
-  },
-  {
-    id: 'blessing-seed-priya',
-    guest_name: 'Priya Kulkarni',
-    message: 'नेहा आणि चिन्मय, तुम्हा दोघांना साखरपुड्याच्या आणि भावी आयुष्यासाठी मनापासून हार्दिक शुभेच्छा! सदैव आनंदी राहा.',
-    approval_status: 'approved',
-    created_at: new Date(Date.now() - 3600000 * 18).toISOString(),
-  },
-  {
-    id: 'blessing-seed-vikram',
-    guest_name: 'Vikram Shinde',
-    message: 'Warmest congratulations Chinmay & Neha on your engagement! Wishing you a wonderful partnership filled with mutual trust and joy.',
-    approval_status: 'approved',
-    created_at: new Date(Date.now() - 3600000 * 22).toISOString(),
-  },
-];
-
 /**
- * Fetch all blessings for Admin Moderation
+ * Fetch all blessings for Admin Moderation (Pure Real Cloud Data)
  */
 export async function getAdminBlessings() {
   initializeSeedsIfFirstRun();
+
+  if (isSupabaseConfigured() && supabase) {
+    try {
+      const { data, error } = await supabase
+        .from('blessings')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (!error && Array.isArray(data)) {
+        const serverBlessings = data.map(b => ({
+          id: b.id,
+          guest_name: b.guest_name || 'Esteemed Guest',
+          message: b.message,
+          approval_status: b.approval_status || 'approved',
+          created_at: b.created_at,
+        }));
+        return { success: true, data: serverBlessings };
+      }
+    } catch (err) {
+      console.error('Failed to fetch blessings from Supabase:', err);
+    }
+  }
+
+  // Local fallback if offline
   let localBlessings = [];
   try {
     localBlessings = JSON.parse(localStorage.getItem('nc_guest_blessings') || '[]');
   } catch {
     localBlessings = [];
   }
-  if (!Array.isArray(localBlessings)) localBlessings = [];
-
-  // Sort latest first
-  localBlessings.sort((a, b) => new Date(b.created_at || 0).getTime() - new Date(a.created_at || 0).getTime());
-
-  if (!isSupabaseConfigured() || !supabase) {
-    return { success: true, data: localBlessings, localOnly: true };
-  }
-
-  try {
-    const { data, error } = await supabase
-      .from('blessings')
-      .select('*')
-      .order('created_at', { ascending: false });
-
-    if (error) throw error;
-    
-    const serverBlessings = (data || []).map(b => ({
-      id: b.id,
-      guest_name: b.guest_name || 'Esteemed Guest',
-      message: b.message,
-      approval_status: b.approval_status,
-      created_at: b.created_at,
-    }));
-
-    // Merge server with any local submissions
-    const merged = [...localBlessings];
-    serverBlessings.forEach(sb => {
-      if (!merged.some(m => m.id === sb.id)) {
-        merged.push(sb);
-      }
-    });
-
-    return { success: true, data: merged };
-  } catch (err) {
-    console.error('Failed to fetch blessings for admin from Supabase, returning local:', err);
-    return { success: true, data: localBlessings, localOnly: true };
-  }
+  const clean = (localBlessings || []).filter(b => b.id && !b.id.includes('seed'));
+  return { success: true, data: clean, localOnly: true };
 }
 
 /**
