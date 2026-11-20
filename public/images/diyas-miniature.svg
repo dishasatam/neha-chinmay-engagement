@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="diyaBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#4A101D"/>
+      <stop offset="100%" stop-color="#1A0207"/>
+    </radialGradient>
+    <linearGradient id="brassGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="35%" stop-color="#DEB563"/>
+      <stop offset="70%" stop-color="#B58E4C"/>
+      <stop offset="100%" stop-color="#73531F"/>
+    </linearGradient>
+    <filter id="flameBloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#diyaBg)"/>
+
+  <!-- Ornate Rangoli Mat on Altar Floor -->
+  <circle cx="300" cy="350" r="140" fill="#3D0B16" stroke="url(#brassGold)" stroke-width="2"/>
+  <circle cx="300" cy="350" r="115" fill="none" stroke="#D77D16" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="300" cy="350" r="90" fill="none" stroke="url(#brassGold)" stroke-width="1.5"/>
+
+  <!-- Marigold Petal Circle around Diya -->
+  <g opacity="0.85">
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#E26D00" transform="rotate(0 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#FFC312" transform="rotate(30 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#E26D00" transform="rotate(60 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#FFC312" transform="rotate(90 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#E26D00" transform="rotate(120 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#FFC312" transform="rotate(150 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#E26D00" transform="rotate(180 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#FFC312" transform="rotate(210 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#E26D00" transform="rotate(240 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#FFC312" transform="rotate(270 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#E26D00" transform="rotate(300 300 350)"/>
+    <ellipse cx="300" cy="225" rx="10" ry="5" fill="#FFC312" transform="rotate(330 300 350)"/>
+  </g>
+
+  <!-- Central Grand Brass Samai (Diya) -->
+  <!-- Base Pedestal -->
+  <ellipse cx="300" cy="360" rx="65" ry="20" fill="url(#brassGold)"/>
+  <ellipse cx="300" cy="355" rx="50" ry="14" fill="#FFEAA7"/>
+
+  <!-- Vertical Carved Stem with Tier Rings -->
+  <path d="M 292,355 L 295,140 L 305,140 L 308,355 Z" fill="url(#brassGold)"/>
+  <ellipse cx="300" cy="285" rx="26" ry="8" fill="url(#brassGold)"/>
+  <ellipse cx="300" cy="215" rx="32" ry="9" fill="url(#brassGold)"/>
+
+  <!-- Main Oil Reservoir Dish (Multi-wick tier) -->
+  <ellipse cx="300" cy="140" rx="70" ry="18" fill="url(#brassGold)"/>
+  <ellipse cx="300" cy="138" rx="55" ry="12" fill="#520E1D"/>
+
+  <!-- Golden Finial / Peacock crest on top -->
+  <path d="M 295,138 L 300,90 L 305,138 Z" fill="url(#brassGold)"/>
+  <circle cx="300" cy="85" r="10" fill="url(#brassGold)"/>
+
+  <!-- Radiant Flaming Wicks (Lamps) -->
+  <!-- Center Main Flame -->
+  <ellipse cx="300" cy="65" rx="12" ry="24" fill="#FFF2A3" filter="url(#flameBloom)"/>
+  <ellipse cx="300" cy="67" rx="7" ry="16" fill="#FF9F1A"/>
+  
+  <!-- Left Side Wicks -->
+  <ellipse cx="250" cy="130" rx="7" ry="14" fill="#FFF2A3" filter="url(#flameBloom)"/>
+  <ellipse cx="250" cy="131" rx="4" ry="9" fill="#FF9F1A"/>
+
+  <!-- Right Side Wicks -->
+  <ellipse cx="350" cy="130" rx="7" ry="14" fill="#FFF2A3" filter="url(#flameBloom)"/>
+  <ellipse cx="350" cy="131" rx="4" ry="9" fill="#FF9F1A"/>
+
+  <!-- Ambient Golden Glow -->
+  <circle cx="300" cy="100" r="120" fill="#FFA500" opacity="0.12" filter="url(#flameBloom)"/>
+</svg>

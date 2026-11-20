@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mandapBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4A101D"/>
+      <stop offset="100%" stop-color="#24050B"/>
+    </radialGradient>
+    <linearGradient id="goldCarve" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7"/>
+      <stop offset="50%" stop-color="#D7B66F"/>
+      <stop offset="100%" stop-color="#8C662D"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#mandapBg)"/>
+  
+  <!-- Mandap Platform Base -->
+  <polygon points="80,380 520,380 470,330 130,330" fill="#3D0B16" stroke="url(#goldCarve)" stroke-width="2"/>
+  <rect x="130" y="320" width="340" height="10" fill="url(#goldCarve)"/>
+
+  <!-- Golden Ornate Pillars -->
+  <!-- Left Pillar -->
+  <rect x="140" y="100" width="36" height="220" fill="url(#goldCarve)" rx="4"/>
+  <rect x="132" y="300" width="52" height="20" fill="url(#goldCarve)" rx="3"/>
+  <rect x="132" y="100" width="52" height="20" fill="url(#goldCarve)" rx="3"/>
+  <!-- Right Pillar -->
+  <rect x="424" y="100" width="36" height="220" fill="url(#goldCarve)" rx="4"/>
+  <rect x="416" y="300" width="52" height="20" fill="url(#goldCarve)" rx="3"/>
+  <rect x="416" y="100" width="52" height="20" fill="url(#goldCarve)" rx="3"/>
+
+  <!-- Ornate Carved Mandap Arch -->
+  <path d="M 140,110 Q 300,40 460,110" fill="none" stroke="url(#goldCarve)" stroke-width="24" stroke-linecap="round"/>
+  <path d="M 160,120 Q 300,60 440,120" fill="none" stroke="#3D0B16" stroke-width="6"/>
+
+  <!-- Kalash on Top of Arch -->
+  <circle cx="300" cy="45" r="14" fill="url(#goldCarve)"/>
+  <polygon points="300,20 293,42 307,42" fill="url(#goldCarve)"/>
+
+  <!-- Hanging Marigold Garlands -->
+  <path d="M 140,120 Q 220,180 300,140 Q 380,180 460,120" fill="none" stroke="#FFA500" stroke-width="12" stroke-linecap="round" stroke-dasharray="14,4"/>
+  <path d="M 140,120 Q 220,180 300,140 Q 380,180 460,120" fill="none" stroke="#FFD700" stroke-width="7" stroke-linecap="round" stroke-dasharray="10,6"/>
+  <path d="M 140,135 Q 220,195 300,155 Q 380,195 460,135" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="6,4"/>
+
+  <!-- Central Chowrang / Altar inside Mandap -->
+  <rect x="250" y="270" width="100" height="50" fill="#641D2B" stroke="url(#goldCarve)" stroke-width="3" rx="4"/>
+  <ellipse cx="300" cy="270" rx="46" ry="12" fill="url(#goldCarve)"/>
+  
+  <!-- Small Diya on Chowrang -->
+  <ellipse cx="300" cy="265" rx="14" ry="5" fill="#FFEAA7"/>
+  <circle cx="300" cy="254" r="7" fill="#FFC312"/>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="jewelBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#4A101D"/>
+      <stop offset="100%" stop-color="#190206"/>
+    </radialGradient>
+    <linearGradient id="pureGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5D6"/>
+      <stop offset="35%" stop-color="#E5C778"/>
+      <stop offset="70%" stop-color="#B58E4C"/>
+      <stop offset="100%" stop-color="#73531F"/>
+    </linearGradient>
+    <radialGradient id="rubyGem" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="60%" stop-color="#C2185B"/>
+      <stop offset="100%" stop-color="#51061C"/>
+    </radialGradient>
+    <radialGradient id="pearlShine" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#ECEFF1"/>
+      <stop offset="100%" stop-color="#CFD8DC"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#jewelBg)"/>
+
+  <!-- Velvet Presentation Display Cushion -->
+  <polygon points="120,400 480,400 440,80 160,80" fill="#2E050D" stroke="url(#pureGold)" stroke-width="2"/>
+  <polygon points="135,385 465,385 430,95 170,95" fill="#420814"/>
+
+  <!-- Kolhapuri Saaj (Traditional Maharashtrian Necklace) -->
+  <g transform="translate(300, 150)">
+    <!-- Main Crescent Chain Curve -->
+    <path d="M -140,-30 C -120,80 120,80 140,-30" fill="none" stroke="url(#pureGold)" stroke-width="6"/>
+    <path d="M -140,-30 C -120,80 120,80 140,-30" fill="none" stroke="#FFEAA7" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <!-- Auspicious Saaj Leaflets (Pans / Aakars) -->
+    <!-- Center Big Locket -->
+    <ellipse cx="0" cy="72" rx="16" ry="22" fill="url(#pureGold)"/>
+    <circle cx="0" cy="72" r="8" fill="url(#rubyGem)"/>
+    <circle cx="0" cy="98" r="4" fill="url(#pearlShine)"/>
+
+    <!-- Left Motifs -->
+    <ellipse cx="-40" cy="65" rx="10" ry="16" fill="url(#pureGold)" transform="rotate(-15 -40 65)"/>
+    <circle cx="-40" cy="65" r="5" fill="url(#rubyGem)"/>
+    <ellipse cx="-80" cy="46" rx="9" ry="14" fill="url(#pureGold)" transform="rotate(-30 -80 46)"/>
+    <circle cx="-80" cy="46" r="4.5" fill="url(#rubyGem)"/>
+    <ellipse cx="-115" cy="15" rx="8" ry="12" fill="url(#pureGold)" transform="rotate(-45 -115 15)"/>
+
+    <!-- Right Motifs -->
+    <ellipse cx="40" cy="65" rx="10" ry="16" fill="url(#pureGold)" transform="rotate(15 40 65)"/>
+    <circle cx="40" cy="65" r="5" fill="url(#rubyGem)"/>
+    <ellipse cx="80" cy="46" rx="9" ry="14" fill="url(#pureGold)" transform="rotate(30 80 46)"/>
+    <circle cx="80" cy="46" r="4.5" fill="url(#rubyGem)"/>
+    <ellipse cx="115" cy="15" rx="8" ry="12" fill="url(#pureGold)" transform="rotate(45 115 15)"/>
+  </g>
+
+  <!-- Traditional Maharashtrian Brahmani Nath (Nose Ring) with Pearls & Ruby -->
+  <g transform="translate(300, 310)">
+    <!-- Curved Golden Wire -->
+    <path d="M -35,-20 C -45,15 -10,35 15,25 C 35,15 35,-15 15,-25" fill="none" stroke="url(#pureGold)" stroke-width="4"/>
+    <!-- Pearl Cluster Strings -->
+    <circle cx="-32" cy="-5" r="5" fill="url(#pearlShine)"/>
+    <circle cx="-25" cy="12" r="5.5" fill="url(#pearlShine)"/>
+    <circle cx="-8" cy="24" r="6" fill="url(#pearlShine)"/>
+    <circle cx="10" cy="20" r="5.5" fill="url(#pearlShine)"/>
+    <circle cx="24" cy="5" r="5" fill="url(#pearlShine)"/>
+
+    <!-- Center Faceted Ruby & Emerald Stones -->
+    <ellipse cx="-6" cy="2" rx="7" ry="10" fill="url(#rubyGem)"/>
+    <circle cx="6" cy="2" r="6" fill="#10AC84"/>
+    <circle cx="0" cy="-10" r="4" fill="url(#pureGold)"/>
+  </g>
+</svg>

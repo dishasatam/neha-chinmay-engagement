@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="waxGradient" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="30%" stop-color="#D7B66F"/>
+      <stop offset="70%" stop-color="#B58E4C"/>
+      <stop offset="90%" stop-color="#8C662D"/>
+      <stop offset="100%" stop-color="#5E3F15"/>
+    </radialGradient>
+    <radialGradient id="innerDepression" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B58E4C"/>
+      <stop offset="85%" stop-color="#8C662D"/>
+      <stop offset="100%" stop-color="#5E3F15"/>
+    </radialGradient>
+    <filter id="sealShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Wax Seal Uneven Rim -->
+  <path d="M 100,10 
+           C 120,8 135,16 150,25 
+           C 168,36 182,50 188,70 
+           C 194,90 190,110 185,130 
+           C 178,152 165,170 145,182 
+           C 125,192 105,190 85,188 
+           C 65,185 45,178 30,162 
+           C 14,144 8,125 10,105 
+           C 12,82 22,62 38,45 
+           C 54,28 75,12 100,10 Z" 
+        fill="url(#waxGradient)" filter="url(#sealShadow)"/>
+
+  <!-- Inner Embossed Well -->
+  <circle cx="100" cy="100" r="68" fill="url(#innerDepression)" stroke="#FFE082" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#D7B66F" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Ornate Decorative Ring Dots -->
+  <circle cx="100" cy="46" r="3" fill="#FFE082"/>
+  <circle cx="100" cy="154" r="3" fill="#FFE082"/>
+  <circle cx="46" cy="100" r="3" fill="#FFE082"/>
+  <circle cx="154" cy="100" r="3" fill="#FFE082"/>
+
+  <!-- Monogram N & C in Royal Serif -->
+  <text x="100" y="112" font-family="'Cormorant Garamond', Georgia, serif" font-size="42" font-weight="700" 
+        fill="#FFF3D4" text-anchor="middle" letter-spacing="1">
+    N&amp;C
+  </text>
+  
+  <!-- Tiny Lotus underneath -->
+  <path d="M 94,124 Q 100,120 106,124 Q 100,132 94,124 Z" fill="#FFE082"/>
+</svg>

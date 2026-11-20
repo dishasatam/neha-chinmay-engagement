@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Suppress Netlify Drawer, Feedback badge and Deploy Preview widgets */
+#netlify-drawer,
+[data-netlify-deploy-preview-badge],
+iframe#netlify-drawer,
+.netlify-feedback-badge,
+[class*="netlify-drawer"],
+div[data-netlify-drawer] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: #1F040A;
+    color: #F7EFDF;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    font-size: 16px;
+  }
+
+  /* Responsive larger heading & body scales with generous line-height for Devanagari/Marathi */
+  h1 {
+    font-size: clamp(2.25rem, 6vw + 0.5rem, 5rem);
+    line-height: 1.4;
+    overflow: visible;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4.5vw + 0.5rem, 3.75rem);
+    line-height: 1.4;
+    overflow: visible;
+  }
+
+  h3 {
+    font-size: clamp(1.45rem, 2.8vw + 0.5rem, 2.5rem);
+    line-height: 1.4;
+    overflow: visible;
+  }
+
+  p {
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.25rem);
+    line-height: 1.75;
+  }
+
+  /* Form controls: 16px minimum prevents iOS Safari zoom */
+  input, select, textarea, button {
+    font-size: 16px;
+    touch-action: manipulation;
+  }
+}
+
+/* Custom Maharashtrian Royal Aesthetic */
+.font-garamond {
+  font-family: 'Cormorant Garamond', 'Tiro Devanagari Marathi', Georgia, serif;
+}
+
+.font-marathi {
+  font-family: 'Tiro Devanagari Marathi', 'Noto Serif Devanagari', 'Noto Sans Devanagari', sans-serif;
+  line-height: 1.6;
+}
+
+/* Universal Devanagari text safety: ample padding & line height so no matras are ever clipped */
+:lang(mr), [lang="mr"], .marathi-text {
+  font-family: 'Tiro Devanagari Marathi', 'Noto Sans Devanagari', sans-serif;
+  line-height: 1.6;
+}
+
+/* Royal Gold Text Gradient with proper top/bottom breathing room for vowel marks */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0D0 0%, #D7B66F 40%, #B58E4C 75%, #F5EBDD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding-top: 0.15em;
+  padding-bottom: 0.12em;
+  line-height: 1.35;
+  overflow: visible;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #D7B66F 0%, #FFF5DF 50%, #B58E4C 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  display: inline-block;
+  padding-top: 0.22em;
+  padding-bottom: 0.15em;
+  line-height: 1.38;
+  overflow: visible;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Gold Ornamental Border Styles */
+.royal-border {
+  border: 1px solid rgba(215, 182, 111, 0.4);
+  position: relative;
+}
+
+.royal-border::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  border: 1px solid rgba(215, 182, 111, 0.2);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Subtle Paithani and Kolam Background Pattern */
+.bg-mandap-pattern {
+  background-color: #24060C;
+  background-image: radial-gradient(rgba(215, 182, 111, 0.1) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-toran-pattern {
+  background: radial-gradient(circle at 50% 0%, rgba(100, 29, 43, 0.85) 0%, rgba(31, 4, 10, 0.98) 100%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #140206;
+}
+::-webkit-scrollbar-thumb {
+  background: #B58E4C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D7B66F;
+}
+
+/* Glassmorphism for Royal Cards */
+.royal-glass {
+  background: rgba(49, 9, 18, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(215, 182, 111, 0.35);
+}
+
+.royal-glass-ivory {
+  background: rgba(250, 245, 235, 0.98);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(181, 142, 76, 0.5);
+  color: #2B060D;
+}
+
+/* Cross-device & Apple Safari 3D transform & safe area utilities */
+.preserve-3d {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.min-h-screen-safe {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
